@@ -1,6 +1,3 @@
-// Strategy4Blue.cpp  
-//
-
 #include "stdafx.h"
 #include <string.h>
 #include "strategy.h"
