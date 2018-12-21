@@ -38,7 +38,7 @@ Date          Version           Modifier				  Content
 // STRATEGY_API functions as being imported from a DLL, wheras this DLL sees symbols
 // defined with this macro as being exported.
 
-//#define TEAM1 // Comment this line to compile it for Team2.dll
+#define TEAM1 // Comment this line to compile it for Team2.dll
 
 #ifdef TEAM_EXPORTS
 #define TEAM_API __declspec(dllexport)

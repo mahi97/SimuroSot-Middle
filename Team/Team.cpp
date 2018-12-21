@@ -2,8 +2,8 @@
 ********************************************************************************
 <PRE>
 Module			 : Implementation of referee logics, strategy agency and logging.
-File			 : Team1.cpp
-Relevent File(s) : Team1.h, Referee.h
+File			 : Team.cpp
+Relevent File(s) : Team.h, Referee.h
 Function(s)      : The automatic referee and strategy agency for FIRA MiroSot/SimuroSot.
 Author(s)        : Le Li, Linquan Yang, Mohammad Mahdi Rahimi
 Version          : 0.3
@@ -326,8 +326,9 @@ extern "C" TEAM_API void Strategy ( Environment *pEnv )
 	}
 
 	pEnv->lastBall = oEnv.currentBall;
-
+#ifdef TEAM1
 	WriteLog(&oEnv);
+#endif
 }
 
 
